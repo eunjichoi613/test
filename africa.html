@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SimpleShop</title>
+    <meta charset="utf-8" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica';
+        }
+
+        .navbar{
+            height: 80px;
+            background-color: white;
+        }
+
+        .navbar .logo{
+            float: left;
+            margin-left: 30px;
+            line-height: 80px;
+        }
+
+        .navbar .logo img{
+            height: 60px;
+            vertical-align: middle;
+        }
+
+        .navbar .menu{
+            float: right;
+            list-style: none;
+        }
+
+        .navbar .menu li{
+            float: left;
+            margin-right: 30px;
+        }
+        .navbar .menu a{
+            line-height: 80px;
+            font-size: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        .header{
+            height: 400px;
+            background-image: url('images/아프리카.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .main-container h2{
+            font-size: 24px;
+            color: #545454;
+            font-weight: bold;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .product-container{
+            width: 715px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .product-item{
+            float: left;
+            width: 225px;
+            text-decoration: none;
+            color: black;
+            margin-bottom: 80px;
+            text-align: center;
+            box-shadow: 5px 5px 10px #cccccc;
+            border-radius: 10px;
+            padding-bottom: 20px;
+        }
+
+        .product-item img{
+            width: 225px;
+            height: 225px;
+        }
+
+        .product-item:not(:nth-child(3n)){
+            margin-right: 20px;
+        }
+
+
+        .product-item p{
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .product-item .product-name{
+            margin-top: 20px;
+            margin-bottom: 4px;
+        }
+
+        .clearfix{
+            clear:both;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 80px;
+        }
+
+        .footer a{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .footer img{
+            height: 30px;
+        }
+
+        .col-auto {
+            flex: 0 0 auto;
+            width: auto;
+        }
+
+        small, .small {
+            font-size: 0.875em;
+            text-decoration: none;
+            color: rgb(28, 17, 1);
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 30px;
+            padding-left: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .px-5 {
+            padding-right: 3rem !important;
+            padding-left: 3rem !important;
+        }
+
+        .footer1 {
+            padding-top: 1.5rem !important;
+            padding-bottom: 1.5rem !important;
+            background-color: rgb(238, 237, 237);
+            margin-top: auto !important;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            margin-right: 30px;
+            margin-left: 30px;
+        }
+
+        .align-items-center {
+            align-items: center !important;
+        }
+
+        .just {
+            justify-content: space-between !important;
+        }
+
+        .lab {
+            flex-direction: column !important;
+        }
+        
+        .la {
+            flex-direction: row !important;
+        }
+
+        .dropdown{
+            position : relative;
+            display : inline-block;
+        }
+
+        .dropbtn{
+            cursor : pointer;
+            font-size : 12px;
+            background-color: white;
+            border: white;
+        }
+        
+        .dropdown-content{
+            display : none;
+            position : absolute;
+            font-weight: 100;
+            background-color: #f9f9f9;
+            min-width : 50px;
+        }
+
+        .dropdown-content a{
+            display : block;
+            text-decoration : none;
+            color : rgb(37, 37, 37);
+            font-size: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .dropdown-content a:hover{
+            background-color : #211702;
+            color: #f9f9f9;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+    </style> 
+  </head>
+
+  <body>
+    <div class="navbar">
+        <a class="logo" href="index.html"><img src="images/로고2.png" alt="Simple-Shop logo"></a>
+        <ul class="menu">
+            <li><a href="contact.html">Contact</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <li><a href="#">Shop</a></li> 
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">home</a>
+                  <a href="#">gift</a>
+                  <a href="#">office</a>
+                </div>
+              </div>
+            <li><a href="#">Cart</a></li>
+            <li><a href="loginpage.html">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="header"></div>
+
+    <div class="main-container">
+        <h2>Africa Coffee Bean</h2>
+        <div class="product-container">
+            <a class="product-item" href="#">
+                <img src="images/에티오피아.jpg" alt="sunglasses">
+                <p class="product-name">에디오피아 모카 시다모</p>
+                <p class="product-price">49,000</p>
+            </a>
+            <a class="product-item" href="#">
+                <img src="images/에티오피아.jpg" alt="tassel_loafer">
+                <p class="product-name">에디오피아 모카 예가체프</p>
+                <p class="product-price">89,000</p>
+            </a>
+            <a class="product-item" href="#">
+                <img src="images/케냐.jpg" alt="beige_bag">
+                <p class="product-name">케냐 AA TOP</p>
+                <p class="product-price">69,000</p>
+            </a>
+            <a class="product-item" href="#">
+                <img src="images/탄자니아.jpg" alt="beige_bag">
+                <p class="product-name">탄자니아 AAA</p>
+                <p class="product-price">69,000</p>
+            </a>
+            <a class="product-item" href="#">
+                <img src="images/예멘.jpg" alt="beige_bag">
+                <p class="product-name">예멘 모카 마타리</p>
+                <p class="product-price">69,000</p>
+            </a>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="#"><img src="images/facebook.png" alt="facebook"></a>
+        <a href="#"><img src="images/instagram.png" alt="instagram"></a>
+        <a href="#"><img src="images/twitter.png" alt="twitter"></a>
+    </div>
+    <div class="footer1">
+        <div class="container px-5">
+            <div class="row align-items-center just lab la">
+                <div class="col-auto"><div class="small m-0">Copyright &copy; Eunji Choi's Website</div></div>
+                <div class="col-auto">
+                    <a class="small" href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="#!">Terms</a>
+                    <span class="mx-1">&middot;</span>
+                    <a class="small" href="#!">Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

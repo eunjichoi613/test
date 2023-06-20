@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>버튼 디자인</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet">
+  <style>
+    * {
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+    }
+
+    body {
+        margin: 0;
+        background-color: #a67a2f;
+    }
+
+    .login-form {
+        background-color: #EEEFF1;
+        margin-top:  50px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        width: 300px;
+        padding: 20px 20px 20px 20px;
+        margin-bottom: 10px;
+    }
+
+    .text-field {
+        font-size: 14px;
+        border: none;
+        width: 260px;
+        margin-bottom: 10px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;  
+    }
+
+    .submit-btn {    
+        font-size: 14px;
+        background-color: #c1940e;
+        text-align: center;
+        width: 260px;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5px;
+    }
+    .submit-btn:hover { 
+        box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.50); 
+    }
+
+    .links {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .links a {
+        font-size: 12px;
+        color: #9B9B9B;
+        text-align: center;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    #back{
+        text-decoration: none;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+    <h1>ENTER YOUR<br>ID/PASSWORD</h1>
+    <div class="login-form">
+        <form>
+        <input type="text" name="email" class="text-field" placeholder="아이디"><br>
+        <input type="password" name="password" class="text-field" placeholder="비밀번호"><br>
+        <input type="submit" value="로그인" class="submit-btn">
+        </form>
+
+        <div class="links">
+        <a href="#">비밀번호를 잊어버리셨나요?</a><br>
+        <a href="index.html" id="back">GO BACK TO HOME</a>
+        </div>
+    </div>
+
+</body>
+</html>
